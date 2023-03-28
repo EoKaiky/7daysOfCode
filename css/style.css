@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --text1-color: #667085;
+    --redtext-color: #8e2424;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    padding: 1rem 0;
+    margin-top: 18px;  
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    height: 22px;
+}
+
+.navbar-brand { /*Button base*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    text-decoration: none;
+    margin-right: 2rem
+}
+
+.navbar-brand img{
+    margin-right: 10px
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;    
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.content ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    width: 100px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 4px;
+}
+
+.content li a{
+    text-decoration: none;
+    color: var(--text1-color);
+}
+
+.navigationActions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    padding: 0px;
+    position: static;
+    margin-left: 450px; /*1041*/
+}
+
+.navigationActions button {
+    padding: 10px 18px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    color: var(--text1-color);    
+    font-size: 16px;
+    width: fit-content;
+}
+
+.navigationActions .btn-cadastrar {
+    background-color: #8e2424;
+    color: #fff;    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 0;
+    gap: 1rem;  /* poderia ser margin-bottom pra cada elemento, gap dá um espaçamento entre todos os filhos de uma div com display flex*/
+}
+
+.sobre-nos {
+    color: #8e2424;
+}
+
+.titulo {
+    font-size: 2rem;
+}
+
+.descricao-titulo {
+    color: var(--text1-color); 
+    text-align: center;
+    line-height: 30px;
+    max-width: 50%;
+}
+
+.metricas-container {
+    background-color: #F9FAFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 288px;
+    padding: 0 96px;
+}
+
+.numeros {
+    color: var(--redtext-color);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;    
+}
+
+.cases {
+    color: #101828;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 8px 0;
+}
+
+.descricao {
+    width: 280px;
+    margin: 36px, 0 0 0;
+    font-family: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+    margin: 8px 0;
+    margin-right: 15px;
+}
+
+.vagas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink:1 ;
+    padding: 96px 0px;
+    height: 1798px;
+}
+
+.botao-vagas {
+    width: fit-content;   
+    height: fit-content;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--redtext-color);
+    border-radius: 50px;
+    padding: 5px 15px;
+    border-style: none;
+    box-shadow: 1px 3px 5px rgb(199, 198, 198);
+}
+
+.titulo-vagas {
+    width: fit-content;
+    height: 44px;
+    color: #101828;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 44px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.subtitulo-vagas {
+    text-align: center;
+    width: fit-content;
+    height: 30px;
+    margin-top: 48px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #667085;
+}
+
+.image-vagas {
+    position: absolute;
+    width: 1216px;
+    height: 400px;
+    margin-top: 298px;
+}
+
+.vagas-abertas {
+    width: 1440px;
+    height: 940px;    
+    margin-top: 562px;
+}
+
+.vagas-design-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 22px;
+
+    position: absolute;
+    width: 1440px;
+    height: 358px;
+    margin-right: 10px;
+}
+.vagas-design-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px;
+
+    width: 768px;
+    height: 358px;
+}
+
+.vagas-dev-container {
+    margin-top: 400px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 22px;
+
+    position: absolute;
+    width: 1440px;
+    height: 518px;
+    margin-right: 10px;
+}
+
+.vagas-dev-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+
+    width: 768px;
+    height: 358px;
+}
+
+.setor {
+    width: 768px;
+    height: 30px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;    
+    color: #101828;
+}
+
+.job-post {
+    min-width: 768px;
+    min-height: 116px;
+    border-radius: 16px;
+    padding: 24px, 24px, 28px, 24px;
+    border: 1px solid #EAECF0;   
+    margin-top: 20px; 
+}
+
+.vaga-titulo {
+    width: fit-content;
+    height: 24px;
+    margin: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;    
+    color: #101828;
+}
+.vaga-detalhe {
+    width: fit-content;
+    height: 24px;
+    margin: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;    
+    color: #667085;
+}
+
+.vaga-detalhe span {
+    padding-left: 30px ;
+}
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(178, 255, 127) ;
+    height: 500px;
+    text-align: center;
+    background: rgba(196, 25, 25, 0.03);
+    border-radius: 16px;
+    margin: 0 112px 96px
+}
+
+.depoimentos span {
+    color:var(--redtext-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.depoimentos h3 {
+    color: #101828;
+    font-size: 36px;;
+    line-height: 44px;
+    font-weight: 500;
+    max-width: 80%;
+    margin-bottom: 20px;
+    
+}
+
+.depoimentos img{
+    border-radius: 50%;
+}
+
+figcaption {
+    margin: 10px ;
+    margin-bottom: 15px;
+}
+
+.oportunidades {
+    background-color: #F9FAFB;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oportunidades h3 {
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 44px;
+    color: #101828;
+    margin-top: 96px;
+}
+
+.oportunidades p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #667085;
+    margin: 30px;
+}
+
+.oportunidades .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
+
+.button input, button {
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    margin-right: 5px;
+} 
+.button input {
+    border: 1px solid #D0D5DD;
+    color: #667085;
+}
+
+.button button {
+    border: 1px solid #8E2424;
+    background-color: #8e2424;
+    color: white;
+}
+
+footer {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px 0 96px 0;
+    color: #98A2B3;
+    background-color: #F9FAFB;
+}
